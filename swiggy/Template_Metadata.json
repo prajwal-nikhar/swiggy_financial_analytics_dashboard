@@ -1,0 +1,77 @@
+
+{
+  "name": "Advanced Financial Performance Dashboard",
+  "description": "Enterprise-grade financial dashboard with advanced analytics and cost accounting capabilities",
+  "version": "2.0",
+  "author": "MBA Student",
+  "category": "Finance & Accounting",
+  "tags": ["Finance", "Dashboard", "KPIs", "Variance Analysis", "Cost Accounting", "Executive Reporting"],
+  "requirements": {
+    "powerbi_version": "2024.01",
+    "dax_version": "2.0",
+    "custom_visuals": [],
+    "data_sources": ["Excel", "CSV", "SQL Server"],
+    "features": ["Row Level Security", "Time Intelligence", "Mobile Layout"]
+  },
+  "data_model": {
+    "tables": [
+      {
+        "name": "Financial_Performance",
+        "type": "Fact",
+        "records": 36,
+        "key_measures": ["Revenue", "COGS", "EBITDA", "Net_Income"]
+      },
+      {
+        "name": "Budget_Actual", 
+        "type": "Fact",
+        "records": 108,
+        "key_measures": ["Budget", "Actual", "Variance"]
+      },
+      {
+        "name": "Cost_Center",
+        "type": "Fact", 
+        "records": 252,
+        "key_measures": ["Actual_Expense", "Budget_Expense", "Employee_Count"]
+      },
+      {
+        "name": "Date",
+        "type": "Dimension",
+        "records": 1095,
+        "key_columns": ["Year", "Quarter", "Month", "Date"]
+      }
+    ],
+    "relationships": [
+      "Date[Date] -> Financial_Performance[Date] (1:Many)",
+      "Date[Date] -> Budget_Actual[Date] (1:Many)",
+      "Date[Date] -> Cost_Center[Date] (1:Many)",
+      "Date[Date] -> Cash_Flow[Date] (1:Many)",
+      "Date[Date] -> Financial_KPIs[Date] (1:Many)"
+    ]
+  },
+  "dashboards": {
+    "executive_summary": {
+      "visuals": 8,
+      "filters": 4,
+      "pages": 1,
+      "target_users": "C-Suite"
+    },
+    "financial_performance": {
+      "visuals": 12,
+      "filters": 6,
+      "pages": 2,
+      "target_users": "Finance Team"
+    },
+    "variance_analysis": {
+      "visuals": 10,
+      "filters": 5,
+      "pages": 2,
+      "target_users": "Controllers"
+    }
+  },
+  "deployment": {
+    "workspace": "Finance Analytics",
+    "refresh_schedule": "Daily 6:00 AM",
+    "security": "Row Level Security Enabled",
+    "sharing": "Organization Wide"
+  }
+}

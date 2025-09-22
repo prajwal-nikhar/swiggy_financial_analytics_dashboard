@@ -1,0 +1,64 @@
+
+{
+  "project": {
+    "name": "Advanced Financial Performance Dashboard",
+    "version": "2.0",
+    "description": "Enterprise-grade Power BI dashboard for financial analytics and management reporting",
+    "author": "MBA Student",
+    "created": "2024",
+    "license": "MIT"
+  },
+  "data_sources": {
+    "primary": [
+      "Financial_Performance_Data.csv",
+      "Budget_vs_Actual_Data.csv", 
+      "Cost_Center_Analysis.csv",
+      "Cash_Flow_Statement.csv",
+      "Financial_KPIs.csv"
+    ],
+    "refresh_schedule": "Daily at 6:00 AM",
+    "data_gateway": "Required for production"
+  },
+  "dashboard_pages": {
+    "executive_summary": {
+      "visuals": ["KPI Cards", "Trend Charts", "Performance Scorecard"],
+      "filters": ["Year", "Quarter", "Business Unit"],
+      "target_audience": "C-Suite Executives"
+    },
+    "financial_performance": {
+      "visuals": ["P&L Waterfall", "Margin Analysis", "Revenue Breakdown"],
+      "filters": ["Time Period", "Product Line", "Region"],
+      "target_audience": "CFO, Finance Directors"
+    },
+    "variance_analysis": {
+      "visuals": ["Variance Matrix", "Budget vs Actual", "Exception Report"],
+      "filters": ["Cost Center", "Variance Threshold", "Time Period"],
+      "target_audience": "Controllers, Finance Managers"
+    },
+    "cost_center_analysis": {
+      "visuals": ["Heat Map", "Utilization Charts", "Cost per Employee"],
+      "filters": ["Department", "Employee Level", "Time Period"],
+      "target_audience": "Department Heads, HR Directors"
+    },
+    "cash_flow_management": {
+      "visuals": ["Cash Flow Statement", "Liquidity Ratios", "Cash Forecast"],
+      "filters": ["Cash Flow Type", "Time Period", "Business Unit"],
+      "target_audience": "Treasurer, CFO"
+    },
+    "financial_ratios": {
+      "visuals": ["Ratio Dashboard", "Peer Comparison", "Trend Analysis"],
+      "filters": ["Ratio Category", "Industry Benchmark", "Time Period"],
+      "target_audience": "Financial Analysts, Investors"
+    }
+  },
+  "security": {
+    "row_level_security": "Enabled",
+    "data_classification": "Confidential",
+    "user_roles": ["Executive", "Finance Manager", "Analyst", "Viewer"]
+  },
+  "performance": {
+    "max_dataset_size": "1GB",
+    "refresh_frequency": "Daily",
+    "query_optimization": "DirectQuery for real-time data"
+  }
+}

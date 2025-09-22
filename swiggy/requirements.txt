@@ -1,0 +1,31 @@
+
+Power BI Desktop Requirements:
+- Version: Latest (2024 or newer)
+- Memory: 8GB RAM minimum (16GB recommended)
+- Storage: 2GB free space
+- OS: Windows 10/11 or Windows Server 2016+
+
+Data Sources:
+- Excel files (.xlsx, .csv)
+- SQL Server 2016+ (optional)
+- Azure SQL Database (optional)
+- SharePoint Lists (optional)
+
+Features Used:
+- DAX Advanced Functions
+- Time Intelligence
+- Row-Level Security
+- Custom Visuals (optional)
+- Power BI Service Integration
+- Mobile Layout
+- Export to PDF/PowerPoint
+
+Additional Tools:
+- DAX Studio (for optimization)
+- Tabular Editor (for advanced modeling)
+- Power BI Report Builder (for pixel-perfect reports)
+
+Licenses Required:
+- Power BI Pro (minimum)
+- Power BI Premium (recommended for large datasets)
+- Power BI Premium Per User (alternative)
