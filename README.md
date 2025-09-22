@@ -278,7 +278,7 @@ npx serve .
         <li>Color scheme inspired by Swiggy's brand guidelines</li>
     </ul>
     <div style="text-align: center; margin-top: 40px; font-size: 1em; line-height: 2.0;" align="center">
-    <span> <a href="https://github.com/prajwal-nikhar/swiggy_financial_analytics_dashboard/edit/main/README.md" style="text-decoration: none;">⭐ Star this repository</a></span> &nbsp;&nbsp;|&nbsp;&nbsp;
+    <span> <a href="https://github.com/prajwal-nikhar/swiggy_financial_analytics_dashboard/tree/main" style="text-decoration: none;">⭐ Star this repository</a></span> &nbsp;&nbsp;|&nbsp;&nbsp;
     <span>🍴 Fork it for your own experiments</span> &nbsp;&nbsp;|&nbsp;&nbsp;
     <span><a href="+91-9834736513" style="text-decoration: none;">📧 Contact me</a></span> &nbsp;&nbsp;|&nbsp;&nbsp;
     <span><a href="https://www.linkedin.com/in/prajwalnikhar/" style="text-decoration: none;">💼 Connect on LinkedIn for networking</span>
